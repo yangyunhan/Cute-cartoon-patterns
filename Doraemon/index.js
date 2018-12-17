@@ -1,5 +1,4 @@
 var eye = document.querySelectorAll('.eye');
-console.log(eye);
 for (var i = 0, len = eye.length; i < len; i++) {
     eye[i].innerEye = eye[i].querySelector('.pupil');
 }
@@ -15,7 +14,6 @@ function getOffsetCenter(el) {
 function eyeMover(event) {
     event = event || window.event;
     var coorX, coorY;
-    console.log(event);
     if (event.touches && event.touches.length === 1) {
         event.preventDefault();
         coorX = event.touches[0].clientX;
@@ -24,8 +22,6 @@ function eyeMover(event) {
         coorX = event.clientX || event.pageX;
         coorY = event.clientY || event.pageY;
     }
-    console.log(coorX)
-    console.log(coorY)
     var screenX = window.innerWidth / 2;
     var screenY = window.innerHeight / 2;
     for (var i = 0, len = eye.length; i < len; i += 1) {
