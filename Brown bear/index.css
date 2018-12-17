@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    /* background-color: #333333; */
+}
+.bac{
+    width: 345px;
+    height: 500px;
+    top: 50%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: #333333; */
+}
+.bac .head{
+    width: 346px;
+    height: 288px;
+    background-color: #e1b79b;
+    border: 3px solid #a57662;
+    border-radius: 50% 50% 50% 50% / 70% 60% 40% 40%;
+    position: relative;
+    z-index: 88;
+}
+/*左耳朵*/
+.earLeft{
+    height: 50px;
+    width: 70px;
+    background-color: #e1b79b;
+    border-radius: 200px 200px 100px 100px;
+    border: 3px solid #a57662;
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    transform: rotate(-49deg);
+}
+.earLeft .earCon{
+    width: 40px;
+    height: 60px;
+    background-color: #eed8ce;
+    border-radius: 50% / 40% 40% 30% 30%;
+    margin-left: 17px;
+    margin-top: 15px;
+    transform: rotate(-3deg); 
+}
+/*右耳朵*/
+.earRight{
+    height: 50px;
+    width: 70px;
+    background-color: #e1b79b;
+    border-radius: 200px 200px 100px 100px;
+    border: 3px solid #a57662;
+    transform: rotate(40deg);
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.earRight .earCon{
+    width: 40px;
+    height: 60px;
+    background-color: #eed8ce;
+    border-radius: 50%/ 40% 40% 30% 30%;
+    margin-left: 17px;
+    margin-top: 15px;
+    transform: rotate(-3deg);
+}
+/*左眼睛*/
+.head .eyeLeft{
+    height: 78px;
+    width: 67px;
+    background-color: #ffffff;
+    border-radius: 50%/50%;
+    transform: rotate(20deg);
+    position: absolute;
+    top: 113px;
+    left: 68px;
+}
+.head .eyeConLeft{
+    width: 28px;
+    height: 33px;
+    background-color: #511313;
+    position: absolute;
+    border-radius: 50%/50%;
+    transform: rotate(-13deg);
+    top: 20px;
+    right: 15px;
+}
+/*右眼睛*/
+.head .eyeRight{
+    height: 78px;
+    width: 67px;
+    background-color: #ffffff;
+    border-radius: 50%/50%;
+    transform: rotate(-20deg);
+    position: absolute;
+    top: 113px;
+    right: 68px;
+}
+.head .eyeConRight{
+    width: 28px;
+    height: 33px;
+    background-color: #511313;
+    position: absolute;
+    border-radius: 50%/50%;
+    transform: rotate(13deg);
+    top: 20px;
+    left: 15px;
+}
+/*嘴*/
+.head .mouse{
+    width: 99px;
+    height: 76px;
+    background-color: #f7f9e5;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    border-radius: 50%/50%;
+    top: 187px;
+}
+/*鼻子*/
+.head .nose{
+    width: 18px;
+    height: 14px;
+    position: absolute;
+    left: 50%;
+    margin-left: -9px;
+    top: 13px;
+    /* background-color: #511313; */
+}
+.nose .noseTop{
+    width: 18px;
+    height: 8px;
+    background-color: #511313;
+    border-radius: 50%/100% 100% 0 0;
+}
+.nose .noseBottom{
+    width: 0;
+    height: 0;
+    border-top: 9px solid #511313;
+    border-right: 9px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 9px solid transparent;
+    /* border-width: 9px 9px 0;
+    border-style: solid;
+    border-color: #511313 transparent transparent; */
+    position: relative;
+}
+/*辅助元素*/
+.head .arcLeft{
+    position: absolute;
+    top: 36px;
+    left: 23px;
+    width: 80px;
+    height: 30px;
+    background-color: #e1b79b;
+    border-radius: 50%/50%;
+    transform: rotate(-45deg);
+}
+.head .arcRight{
+    position: absolute;
+    top: 36px;
+    right: 16px;
+    width: 80px;
+    height: 30px;
+    background-color: #e1b79b;
+    border-radius: 50%/50%;
+    transform: rotate(43deg);
+}
+
+/*身体*/
+.body{
+    width: 208px;
+    height: 217px;
+    margin: -10px auto;
+    position: relative;
+}
+/*左侧胳膊*/
+.body .armLeft{
+    width: 53px;
+    height: 150px;
+    background-color: #e1b79b;
+    border: 2px solid #a57662;
+    border-radius: 50% 50%/60% 30%;
+    left: 6px;
+    position: absolute;
+    transform: rotate(10deg);
+}
+/*右侧胳膊*/
+.body .armRight{
+    width: 53px;
+    height: 150px;
+    background-color: #e1b79b;
+    border: 2px solid #a57662;
+    border-radius: 50% 50%/60% 30%;
+    transform: rotate(-14deg);
+    position: absolute;
+    right: 6px;
+}
+/*脖子遮盖*/
+.body .neck{
+    width: 120px;
+    height: 30px;
+    background-color: #e1b79b;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: 1;
+}
+/*肚子*/
+.body .tummy{
+    width: 144px;
+    height: 200px;
+    background-color: #e1b79b;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 50% 50% 50% 50%/70% 70% 30% 30%;
+    margin-top: -30px;
+    border: 2px solid #a57662;
+}
+.body .tummyCon{
+    width: 83px;
+    height: 90px;
+    background-color: #f7f9e5;
+    border-radius: 50% 50% 50% 50% / 70% 70% 30% 30%;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 2;
+}
+/*肚子辅助线*/
+.body .arc{
+    border-bottom: 2px solid #511313;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 100px;
+    height: 100px;
+    border: solid 2px #a57662;
+    border-color: transparent transparent #a57662 transparent;
+    border-radius: 50%/0 0 30% 30%;
+    z-index: 1;
+}
+/*左腿*/
+.body .legLeft{
+    width: 53px;
+    height: 100px;
+    background-color: #e1b79b;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    border: 2px solid #a57662;
+    border-color: transparent transparent #a57662 #a57662;
+    border-radius: 50% 50% 50% 50%/0 0 10% 50%;
+}
+/*右腿*/
+.body .legRight{
+    width: 53px;
+    height: 100px;
+    background-color: #e1b79b;
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+    border: 2px solid #a57662;
+    border-color: transparent #a57662 #a57662 transparent;
+    border-radius: 50% 50% 50% 50%/0 0 50% 10%;
+}
+/*左脚辅助线*/
+.body .arcLeft{
+    border-bottom: 2px solid #511313;
+    position: absolute;
+    bottom: -30px;
+    left: 43px;
+    width: 35px;
+    height: 50px;
+    border: solid 2px #a57662;
+    border-color: #a57662 transparent transparent transparent;
+    border-radius: 50%/20% 20% 0 0;
+}
+/*右脚辅助线*/
+.body .arcRight{
+    border-bottom: 2px solid #511313;
+    position: absolute;
+    bottom: -30px;
+    right: 43px;
+    width: 35px;
+    height: 50px;
+    border: solid 2px #a57662;
+    border-color: #a57662 transparent transparent transparent;
+    border-radius: 50%/20% 20% 0 0;
+}
+/*阴影*/
+.shadow{
+    width: 217px;
+    height: 39px;
+    background-color: #e9ecee;
+    margin: -20px auto;
+    border-radius: 50%/50%;
+}
