@@ -12,17 +12,21 @@ body{
     position: relative;
     top: 50%;
     left: 50%;
+
     width: 345px;
     height: 500px;
+
     transform: translate(-50%, -50%);
 }
 .bac .head{
     position: relative;
     z-index: 88;
+
     border: 3px solid #a57662;
     border-radius: 50%/ 70% 60% 40% 40%;
     width: 346px;
     height: 288px;
+
     background-color: #e1b79b;
 }
 /*左耳朵*/
@@ -30,11 +34,14 @@ body{
     position: absolute;
     top: 10px;
     left: 12px;
-    border-radius: 200px 200px 100px 100px;
+
     border: 3px solid #a57662;
+    border-radius: 200px 200px 100px 100px;
     height: 50px;
     width: 70px;
+
     background-color: #e1b79b;
+
     transform: rotate(-49deg);
 }
 .earLeft .earCon{
@@ -43,7 +50,9 @@ body{
     margin-top: 15px;
     width: 40px;
     height: 60px;
+
     background-color: #eed8ce;
+
     transform: rotate(-3deg); 
 }
 /*右耳朵*/
@@ -51,11 +60,14 @@ body{
     position: absolute;
     top: 10px;
     right: 0;
+
     height: 50px;
     width: 70px;
     border-radius: 200px 200px 100px 100px;
     border: 3px solid #a57662;
+
     background-color: #e1b79b;
+
     transform: rotate(40deg);
 }
 
@@ -65,7 +77,9 @@ body{
     border-radius: 50%/ 40% 40% 30% 30%;
     width: 40px;
     height: 60px;
+
     background-color: #eed8ce;
+
     transform: rotate(-3deg);
 }
 /*左眼睛*/
@@ -73,20 +87,26 @@ body{
     position: absolute;
     top: 113px;
     left: 68px;
+
     border-radius: 50%;
     height: 78px;
     width: 67px;
+
     background-color: #ffffff;
+
     transform: rotate(20deg);
 }
 .head .eyeConLeft{
     position: absolute;
     top: 20px;
     right: 15px;
+
     border-radius: 50%;
     width: 28px;
     height: 33px;
+
     background-color: #511313;
+
     transform: rotate(-13deg);
 }
 /*右眼睛*/
@@ -94,20 +114,26 @@ body{
     position: absolute;
     top: 113px;
     right: 68px;
+
     border-radius: 50%;
     height: 78px;
     width: 67px;
+
     background-color: #ffffff;
+
     transform: rotate(-20deg);
 }
 .head .eyeConRight{
     position: absolute;
     top: 20px;
     left: 15px;
+
     border-radius: 50%;
     width: 28px;
     height: 33px;
+
     background-color: #511313;
+
     transform: rotate(13deg);
 }
 /*嘴*/
@@ -115,10 +141,13 @@ body{
     position: absolute;
     left: 50%;
     top: 187px;
+
     border-radius: 50%;
     width: 99px;
     height: 76px;
+
     background-color: #f7f9e5;
+
     transform: translate(-50%,0);
 }
 /*鼻子*/
@@ -126,6 +155,7 @@ body{
     position: absolute;
     left: 50%;
     top: 13px;
+
     margin-left: -9px;
     width: 18px;
     height: 14px;
@@ -134,10 +164,12 @@ body{
     border-radius: 50%/100% 100% 0 0;
     width: 18px;
     height: 8px;
+
     background-color: #511313;
 }
 .nose .noseBottom{
     position: relative;
+
     border-top: 9px solid #511313;
     border-right: 9px solid transparent;
     border-bottom: 0px solid transparent;
@@ -153,26 +185,33 @@ body{
     position: absolute;
     top: 36px;
     left: 23px;
+
     border-radius: 50%;
     width: 80px;
     height: 30px;
+
     background-color: #e1b79b;
+
     transform: rotate(-45deg);
 }
 .head .arcRight{
     position: absolute;
     top: 36px;
     right: 16px;
+
     border-radius: 50%;
     width: 80px;
     height: 30px;
+
     background-color: #e1b79b;
+
     transform: rotate(43deg);
 }
 
 /*身体*/
 .body{
     position: relative;
+
     margin: -10px auto;
     width: 208px;
     height: 217px;
@@ -181,22 +220,28 @@ body{
 .body .armLeft{
     position: absolute;
     left: 6px;
+
     border: 2px solid #a57662;
     border-radius: 50% 50%/60% 30%;
     width: 53px;
     height: 150px;
+
     background-color: #e1b79b;
+
     transform: rotate(10deg);
 }
 /*右侧胳膊*/
 .body .armRight{
     position: absolute;
     right: 6px;
-    width: 53px;
+
     border: 2px solid #a57662;
     border-radius: 50% 50%/60% 30%;
+    width: 53px;
     height: 150px;
+
     background-color: #e1b79b;  
+
     transform: rotate(-14deg);
 }
 /*脖子遮盖*/
@@ -204,21 +249,27 @@ body{
     position: absolute;
     left: 50%;
     z-index: 1;
+
     width: 120px;
     height: 30px;
+
     background-color: #e1b79b;
+
     transform: translate(-50%,0);
 }
 /*肚子*/
 .body .tummy{
     position: absolute;
     left: 50%;
+
     margin-top: -30px;
     border: 2px solid #a57662;
     border-radius: 50%/70% 70% 30% 30%;
     width: 144px;
     height: 200px;
+
     background-color: #e1b79b;
+
     transform: translate(-50%, 0);
 }
 .body .tummyCon{
@@ -226,10 +277,13 @@ body{
     top: 60px;
     left: 50%;
     z-index: 2;
+
     border-radius: 50%/ 70% 70% 30% 30%;
     width: 83px;
     height: 90px;
+
     background-color: #f7f9e5;
+
     transform: translate(-50%, 0);
 }
 /*肚子辅助线*/
@@ -238,12 +292,14 @@ body{
     top: 70px;
     left: 50%;
     z-index: 1;
+
     border: solid 2px #a57662;
     border-color: transparent transparent #a57662 transparent;
     border-radius: 50%/0 0 30% 30%;
     border-bottom: 2px solid #511313;
     width: 100px;
     height: 100px;
+
     transform: translate(-50%,0);
 }
 /*左腿*/
@@ -251,11 +307,13 @@ body{
     position: absolute;
     bottom: 0;
     left: 30px;
+
     border: 2px solid #a57662;
     border-color: transparent transparent #a57662 #a57662;
     border-radius: 50% 50% 50% 50%/0 0 10% 50%;
     width: 53px;
     height: 100px;
+
     background-color: #e1b79b;
 }
 /*右腿*/
@@ -263,11 +321,13 @@ body{
     position: absolute;
     bottom: 0px;
     right: 30px;
+
     border: 2px solid #a57662;
     border-color: transparent #a57662 #a57662 transparent;
     border-radius: 50% 50% 50% 50%/0 0 50% 10%;
     width: 53px;
     height: 100px;
+
     background-color: #e1b79b;
 }
 /*左脚辅助线*/
@@ -275,6 +335,7 @@ body{
     position: absolute;
     bottom: -30px;
     left: 43px;
+
     border: solid 2px #a57662;
     border-color: #a57662 transparent transparent transparent;
     border-radius: 50%/20% 20% 0 0;
@@ -286,6 +347,7 @@ body{
     position: absolute;
     bottom: -30px;
     right: 43px;
+
     border: solid 2px #a57662;
     border-color: #a57662 transparent transparent transparent;
     border-radius: 50%/20% 20% 0 0;
@@ -298,5 +360,6 @@ body{
     border-radius: 50%;
     width: 217px;
     height: 39px;
+    
     background-color: #e9ecee;
 }

@@ -8,34 +8,39 @@
 body{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+
+    height: 100vh;/*如果不加则下部分展示区域会被一直推挤到下面，并且只能是vh，如果是%则和没加一样*/
 }
 .code-wrapper{
     flex: 1;
-    height: 50%;
+
     padding: 10px;
+    height: 50%;
 }
 .preview-wrapper{
     flex: 1;
+
     height: 50%;
 }
 #code{
     overflow: hidden;
+
     height: 100%;
 }
 .actions{
+    display: flex;
+    flex-direction: column;
+
     position: absolute;
     right: 0;
     top: 0;
-    
-    display: flex;
-    flex-direction: column;
 }
 .actions>button{
     margin: 10px;
-    background: #ddd;
-    padding: 8px 10px;
     border: none;
+    padding: 8px 10px;
+
+    background: #ddd;
 }
 .actions>button.active{
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
