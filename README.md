@@ -16,8 +16,8 @@
 
 - 元素、视区、浏览器、显示器大小
 
-<img src="https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/size.jpg" style="zoom: 80%; align:center; width: 80%;" />
-<img src="https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/size2.jpg" style="zoom: 80%; align:center" />
+<img src="https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/size.jpg" style="zoom: 50%; align:center; width: 50%;" />
+<img src="https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/size2.jpg" style="zoom: 50%; align:center" />
 
 - 单位vh、vw
 vh/vw是相对于视窗的高度/宽度
