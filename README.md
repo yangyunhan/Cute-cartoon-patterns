@@ -14,6 +14,8 @@
 皮卡丘：外层`display: flex; justify-content/align-item: center; height: 100%` + 再内层`position: relative; width: 100%; height: 170px;`
 哆啦A梦：已知高度、宽度 + `position: absolute; top/left/bottom/right: 0;` + `margin: auto`
 
+其他部分的定位都通过使用`position: absolute`和具体的`left/right/top/bottom`来实现。
+
 - 元素、视区、浏览器、显示器大小
 
 <img src="https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/size.jpg" style="zoom: 50%; align:center; width: 50%;" />
@@ -25,7 +27,6 @@ vh/vw是相对于视窗的高度/宽度
 1) 元素的尺寸限制，希望图片或者其他在一屏内显示。
 
 ![](https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/%E4%B8%80%E5%B1%8F%E5%9B%BE%E7%89%87.png)
-![](https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/%E4%B8%80%E5%B1%8F%E5%86%85%E5%9B%BE%E7%89%872.png)
 
 ```css
 .vw_vh_img{
@@ -49,3 +50,4 @@ vh/vw是相对于视窗的高度/宽度
 ```
 注释去掉是另一种实现方式
 
+- 
