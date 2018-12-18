@@ -22,9 +22,12 @@
 <img src="https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/size2.jpg" style="zoom: 50%; align:center" />
 
 - 单位vh、vw
+
 vh/vw是相对于视窗的高度/宽度
-只有vh/vw才能完成的应用场景：
-1) 元素的尺寸限制，希望图片或者其他在一屏内显示。
+
+应用场景：
+
+- 元素的尺寸限制，希望图片或者其他在一屏内显示。
 
 ![](https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/%E4%B8%80%E5%B1%8F%E5%9B%BE%E7%89%87.png)
 
