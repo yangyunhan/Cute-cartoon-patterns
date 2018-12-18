@@ -20,10 +20,10 @@
 #### 元素、视区、浏览器、显示器大小
 
 <div style="text-align: center">
-  <img src="https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/size.jpg" width = 70% />
+  <img src="https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/size.jpg" width = 80% />
 </div>
 
-<img src="https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/size2.jpg" width = 70% />
+<img src="https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/size2.jpg" width = 80% />
 
 哆啦A梦中眼球跟随鼠标转动的效果：
 
@@ -50,7 +50,7 @@ vh/vw是相对于视窗的高度/宽度
 
 - 元素的尺寸限制，希望图片或者其他在一屏内显示。
 
-![](https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/%E4%B8%80%E5%B1%8F%E5%9B%BE%E7%89%87.png)
+<img src="https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/%E4%B8%80%E5%B1%8F%E5%9B%BE%E7%89%87.png" width = 80% />
 
 ```css
 .vw_vh_img{
@@ -58,7 +58,7 @@ vh/vw是相对于视窗的高度/宽度
   max-height: 90vh;
 }
 ```
-![](https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/%E4%B8%80%E5%B1%8F%E5%B1%95%E7%A4%BA%E8%AF%B4%E6%98%8E.png)
+<img src="https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/%E4%B8%80%E5%B1%8F%E5%B1%95%E7%A4%BA%E8%AF%B4%E6%98%8E.png" width = 80% />
 
 - Office Word效果：top值是动态的
 实例来自于张鑫旭的关于[vh、vw的demo](https://www.zhangxinxu.com/study/201209/css3-vh-vw-office-word-effect.html)
@@ -92,7 +92,7 @@ vh/vw是相对于视窗的高度/宽度
     <div style="width: 300px; height: 100px; background-color: red; border-top-left-radius: 30px 50px; border-top-right-radius: 30px 50px; border-bottom-left-radius: 30px 50px; border-bottom-right-radius: 30px 50px;"></div>
 ```
 效果图：
-<img src="https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/border-radius.png" width = 70% />
+<img src="https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/border-radius.png" width = 80% />
 
 #### CSS属性书写顺序
 
