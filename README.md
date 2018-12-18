@@ -7,7 +7,8 @@
 
 涉及知识点：
 
-- 居中和定位
+
+##### 居中和定位
 
 三种居中方式
 棕熊：已知高度、宽度 + `position: relative; top/left: 50%; ` + `transform: translate(-50%, -50%)`
@@ -16,7 +17,7 @@
 
 其他部分的定位都通过使用`position: absolute`和具体的`left/right/top/bottom`来实现。
 
-- 元素、视区、浏览器、显示器大小
+##### 元素、视区、浏览器、显示器大小
 
 <div style="text-align: center">
   <img src="https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/size.jpg" width = 70% />
@@ -27,7 +28,20 @@
 哆啦A梦中眼球跟随鼠标转动的效果：
 需要求得鼠标与眼球中央的距离差占整个屏幕的百分比：(鼠标离可视区`event.clientX` - 眼球这个元素可视区的偏移量`offset.x`)/(屏幕的一半宽度`window.innerWidth / 2`)
 
-- 单位vh、vw
+获取元素可视区的偏移量
+```javascript
+function getOffsetCenter(el){
+  var x = el.offsetWidth / 2;
+  var y = el.offsetHeight / 2;
+  do{
+    x += el.offsetLeft;
+    y += el.offsetTop;
+  } while (el = el.offsetParent);
+  return { x: x, y: y }
+}
+```
+
+##### 单位vh、vw
 
 vh/vw是相对于视窗的高度/宽度
 
@@ -60,3 +74,29 @@ vh/vw是相对于视窗的高度/宽度
 注释去掉是另一种实现方式
 
 
+##### CSS属性书写顺序
+
+方便自己及其他人的阅读理解，代码更加简洁
+
+- 显示方法 & 布局
+- 定位
+- 盒模型框
+  - 外边距
+  - 边框
+  - 内边距
+- 尺寸
+- 文本样式
+  - 字体
+  - 文本
+  - 文字颜色
+- 背景
+- 轮廓
+- 透明度 & 阴影
+- 动效
+  - 过渡
+  - 转换变形
+  - 动画
+- 其他
+  - 伪类 & 伪元素
+  - 引用
+  - 媒体查询
