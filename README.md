@@ -17,10 +17,15 @@
 其他部分的定位都通过使用`position: absolute`和具体的`left/right/top/bottom`来实现。
 
 - 元素、视区、浏览器、显示器大小
-<div style="align: center">
-<img src="https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/size.jpg" style="zoom: 50%; width: 40%;" />
+
+<div style="text-align: center">
+  <img src="https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/size.jpg" width = 70% />
 </div>
-<img src="https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/size2.jpg" style="zoom: 50%; align:center" />
+
+<img src="https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/size2.jpg" width = 70% />
+
+哆啦A梦中眼球跟随鼠标转动的效果：
+需要求得鼠标与眼球中央的距离差占整个屏幕的百分比：(鼠标离可视区`event.clientX` - 眼球这个元素可视区的偏移量`offset.x`)/(屏幕的一半宽度`window.innerWidth / 2`)
 
 - 单位vh、vw
 
@@ -54,4 +59,4 @@ vh/vw是相对于视窗的高度/宽度
 ```
 注释去掉是另一种实现方式
 
-- 
+
