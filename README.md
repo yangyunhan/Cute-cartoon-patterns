@@ -93,7 +93,7 @@ vh/vw是相对于视窗的高度/宽度
 ```
 效果图：
 
-<img src="https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/border-radius.png" width = 50% />
+<img src="https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/border-radius.png" width = 20% />
 
 #### 伪元素：一个元素的子元素
 
