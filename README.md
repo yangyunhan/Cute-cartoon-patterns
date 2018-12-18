@@ -1,23 +1,23 @@
 # Cute-cartoon-patterns
 
-这是一个用CSS绘制的可爱卡通图案集合
-包括棕熊、皮卡丘和哆啦A梦。其中棕熊是静态的图案，皮卡丘可以展示出具体的绘制过程，哆啦A梦有眨眼效果。
+这是一个用CSS绘制的可爱卡通图案集合，包括棕熊、皮卡丘和哆啦A梦。其中棕熊是静态的图案，皮卡丘可以展示出具体的绘制过程，哆啦A梦有眨眼效果。
 
 打开感兴趣的图案的文件夹，打开其中的`.html`文件即可看到实现效果。
 
 涉及知识点：
 
 
-##### 居中和定位
+#### 居中和定位
 
 三种居中方式
-棕熊：已知高度、宽度 + `position: relative; top/left: 50%; ` + `transform: translate(-50%, -50%)`
-皮卡丘：外层`display: flex; justify-content/align-item: center; height: 100%` + 再内层`position: relative; width: 100%; height: 170px;`
-哆啦A梦：已知高度、宽度 + `position: absolute; top/left/bottom/right: 0;` + `margin: auto`
+
+- 棕熊：已知高度、宽度 + `position: relative; top/left: 50%; ` + `transform: translate(-50%, -50%)`
+- 皮卡丘：外层`display: flex; justify-content/align-item: center; height: 100%` + 再内层`position: relative; width: 100%; height: 170px;`
+- 哆啦A梦：已知高度、宽度 + `position: absolute; top/left/bottom/right: 0;` + `margin: auto`
 
 其他部分的定位都通过使用`position: absolute`和具体的`left/right/top/bottom`来实现。
 
-##### 元素、视区、浏览器、显示器大小
+#### 元素、视区、浏览器、显示器大小
 
 <div style="text-align: center">
   <img src="https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/size.jpg" width = 70% />
@@ -26,6 +26,7 @@
 <img src="https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/size2.jpg" width = 70% />
 
 哆啦A梦中眼球跟随鼠标转动的效果：
+
 需要求得鼠标与眼球中央的距离差占整个屏幕的百分比：(鼠标离可视区`event.clientX` - 眼球这个元素可视区的偏移量`offset.x`)/(屏幕的一半宽度`window.innerWidth / 2`)
 
 获取元素可视区的偏移量
@@ -41,13 +42,13 @@ function getOffsetCenter(el){
 }
 ```
 
-##### 单位vh、vw
+#### 单位vh、vw
 
 vh/vw是相对于视窗的高度/宽度
 
 应用场景：
 
-一、元素的尺寸限制，希望图片或者其他在一屏内显示。
+- 元素的尺寸限制，希望图片或者其他在一屏内显示。
 
 ![](https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/%E4%B8%80%E5%B1%8F%E5%9B%BE%E7%89%87.png)
 
@@ -59,10 +60,10 @@ vh/vw是相对于视窗的高度/宽度
 ```
 ![](https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/%E4%B8%80%E5%B1%8F%E5%B1%95%E7%A4%BA%E8%AF%B4%E6%98%8E.png)
 
-二、Office Word效果：top值是动态的
+- Office Word效果：top值是动态的
 实例来自于张鑫旭的关于[vh、vw的demo](https://www.zhangxinxu.com/study/201209/css3-vh-vw-office-word-effect.html)
 
-三、画自适应的图片，如正方形
+- 画自适应的图片，如正方形
 ```css
 .rec{
   width: 50%;
@@ -71,13 +72,33 @@ vh/vw是相对于视窗的高度/宽度
   height: 50vw;
 }
 ```
+
 注释去掉是另一种实现方式
 
+#### CSS3: border-radius
 
-##### CSS属性书写顺序
+不规则形状的绘制都是通过这个属性绘制的。常见的不易区分的几种边角设置：
+
+```html
+    <!--第二种是第一种的缩写还原-->
+    <!--四个边角一致，水平垂直半径一致-->
+    <div style="width: 300px; height: 100px; background-color: red; border-radius: 30%"></div>
+    <div style="width: 300px; height: 100px; background-color: red; border-radius: 90px/30px"></div>
+    <!--左上右下、左下右上边角一致，水平垂直半径一致-->
+    <div style="width: 300px; height: 100px; background-color: red; border-radius: 10% 50%"></div>
+    <div style="width: 300px; height: 100px; background-color: red; border-top-left-radius: 30px 10px; border-top-right-radius: 150px 50px; border-bottom-left-radius: 150px 50px; border-bottom-right-radius: 30px 10px;"></div>
+    <!--四个边角一致，水平垂直不一致-->
+    <div style="width: 300px; height: 100px; background-color: red; border-radius: 10%/50%"></div>
+    <div style="width: 300px; height: 100px; background-color: red; border-top-left-radius: 30px 50px; border-top-right-radius: 30px 50px; border-bottom-left-radius: 30px 50px; border-bottom-right-radius: 30px 50px;"></div>
+```
+效果图：
+<img src="https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/border-radius.png" width = 70% />
+
+#### CSS属性书写顺序
 
 方便自己及其他人的阅读理解，代码更加简洁
 
+> 
 - 显示方法 & 布局
 - 定位
 - 盒模型框
@@ -100,3 +121,184 @@ vh/vw是相对于视窗的高度/宽度
   - 伪类 & 伪元素
   - 引用
   - 媒体查询
+
+来自于AlloyTeam的[CSS属性顺序列表](http://alloyteam.github.io/CodeGuide/#css-declaration-order)
+```css
+[
+  [
+    "display",
+    "visibility",
+    "float",
+    "clear",
+    "overflow",
+    "overflow-x",
+    "overflow-y",
+    "clip",
+    "zoom"
+  ],
+  [
+    "table-layout",
+    "empty-cells",
+    "caption-side",
+    "border-spacing",
+    "border-collapse",
+    "list-style",
+    "list-style-position",
+    "list-style-type",
+    "list-style-image"
+  ],
+  [
+    "position",
+    "top",
+    "right",
+    "bottom",
+    "left",
+    "z-index"
+  ],
+  [
+    "margin",
+    "margin-top",
+    "margin-right",
+    "margin-bottom",
+    "margin-left",
+    "box-sizing",
+    "border",
+    "border-width",
+    "border-style",
+    "border-color",
+    "border-top",
+    "border-top-width",
+    "border-top-style",
+    "border-top-color",
+    "border-right",
+    "border-right-width",
+    "border-right-style",
+    "border-right-color",
+    "border-bottom",
+    "border-bottom-width",
+    "border-bottom-style",
+    "border-bottom-color",
+    "border-left",
+    "border-left-width",
+    "border-left-style",
+    "border-left-color",
+    "border-radius",
+    "border-top-left-radius",
+    "border-top-right-radius",
+    "border-bottom-right-radius",
+    "border-bottom-left-radius",
+    "border-image",
+    "border-image-source",
+    "border-image-slice",
+    "border-image-width",
+    "border-image-outset",
+    "border-image-repeat",
+    "padding",
+    "padding-top",
+    "padding-right",
+    "padding-bottom",
+    "padding-left",
+    "width",
+    "min-width",
+    "max-width",
+    "height",
+    "min-height",
+    "max-height"
+  ],
+  [
+    "font",
+    "font-family",
+    "font-size",
+    "font-weight",
+    "font-style",
+    "font-variant",
+    "font-size-adjust",
+    "font-stretch",
+    "font-effect",
+    "font-emphasize",
+    "font-emphasize-position",
+    "font-emphasize-style",
+    "font-smooth",
+    "line-height",
+    "text-align",
+    "text-align-last",
+    "vertical-align",
+    "white-space",
+    "text-decoration",
+    "text-emphasis",
+    "text-emphasis-color",
+    "text-emphasis-style",
+    "text-emphasis-position",
+    "text-indent",
+    "text-justify",
+    "letter-spacing",
+    "word-spacing",
+    "text-outline",
+    "text-transform",
+    "text-wrap",
+    "text-overflow",
+    "text-overflow-ellipsis",
+    "text-overflow-mode",
+    "word-wrap",
+    "word-break"
+  ],
+  [
+    "color",
+    "background",
+    "background-color",
+    "background-image",
+    "background-repeat",
+    "background-attachment",
+    "background-position",
+    "background-position-x",
+    "background-position-y",
+    "background-clip",
+    "background-origin",
+    "background-size"
+  ],
+  [
+    "outline",
+    "outline-width",
+    "outline-style",
+    "outline-color",
+    "outline-offset",
+    "opacity",
+    "box-shadow",
+    "text-shadow"
+  ],
+  [
+    "transition",
+    "transition-delay",
+    "transition-timing-function",
+    "transition-duration",
+    "transition-property",
+    "transform",
+    "transform-origin",
+    "animation",
+    "animation-name",
+    "animation-duration",
+    "animation-play-state",
+    "animation-timing-function",
+    "animation-delay",
+    "animation-iteration-count",
+    "animation-direction"
+  ],
+  [
+    "content",
+    "quotes",
+    "counter-reset",
+    "counter-increment",
+    "resize",
+    "cursor",
+    "user-select",
+    "nav-index",
+    "nav-up",
+    "nav-right",
+    "nav-down",
+    "nav-left",
+    "tab-size",
+    "hyphens",
+    "pointer-events"
+  ]
+]
+```
