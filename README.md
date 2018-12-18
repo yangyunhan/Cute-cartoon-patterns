@@ -16,7 +16,8 @@
 
 - 元素、视区、浏览器、显示器大小
 
-![](https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/size.jpg = 80%)
+![](https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/size.jpg)
+<img src="https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/size.jpg" width = "80%" align=center />
 ![](https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/size2.jpg)
 
 - 单位vh、vw
