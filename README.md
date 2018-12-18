@@ -92,7 +92,63 @@ vh/vw是相对于视窗的高度/宽度
     <div style="width: 300px; height: 100px; background-color: red; border-top-left-radius: 30px 50px; border-top-right-radius: 30px 50px; border-bottom-left-radius: 30px 50px; border-bottom-right-radius: 30px 50px;"></div>
 ```
 效果图：
-<img src="https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/border-radius.png" width = 80% />
+
+<img src="https://github.com/yangyunhan/Cute-cartoon-patterns/blob/master/border-radius.png" width = 50% />
+
+#### 伪元素：一个元素的子元素
+
+##### 好处：
+
+- 简化页面html标签，使页面更加简洁优雅
+- 制造视觉上的效果，且不会增加JS查DOM的负担，影响效率
+- 可以加快浏览器加载html文件，对SEO也有帮助
+
+##### 注意
+
+- 是inline行内元素
+- 无法用js获取
+- img/input等单标签没有before/after伪元素，因为本身没有子元素
+
+##### 适用
+
+- 画无关紧要的分割线、点之类的小元素，否则要添加span标签
+- 清除浮动
+```css
+.clearfix::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+```
+- 制作特殊效果：展示文字
+
+[参考材料](https://www.yinchengli.com/2016/10/30/using-before-after/)
+
+#### HTML5: pre
+
+> 表示预定义格式文本。在该元素中的文本通常按照原文件中的编排，以等宽字体的形式展现出来，文本中的空白符（比如空格和换行符）都会显示出来。
+
+#### setTimeout模仿setInterval
+
+实现皮卡丘的绘制过程，让代码一点一点展示出来
+```javascript
+function writeCode(code, fn){
+  let container = document.querySelector('#code');
+  let styleTag = document.querySelector('#styleTag');
+  let n = 0, id;
+  id = setTimeout(function run(){
+    n += 1;
+    container.innerHTML = code.substring(0, n);
+    styleTag.innerHTML = code.substring(0, n);
+    container.scrollTop = container.scrollHeight;
+    if(n < code.length){
+      id = setTimeout(run, duration);
+    } else {
+      fn & fn.call();
+    }
+  }, duration);
+}
+```
 
 #### CSS属性书写顺序
 
