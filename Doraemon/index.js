@@ -28,6 +28,7 @@ function eyeMover(event) {
         var offset = getOffsetCenter(eye[i]);
         var eyeCoorX = coorX - offset.x;
         var eyeCoorY = coorY - offset.y;
+        //求得鼠标与眼球中央的距离差（鼠标离可视区clientX-眼球这个元素可视区的偏移量offset.x）占整个屏幕的百分比
         eye[i].innerEye.style.left = ((eyeCoorX / screenX) * 50) + '%';
         eye[i].innerEye.style.top = ((eyeCoorY / screenY) * 50) + '%';
     }
